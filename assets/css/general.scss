@@ -1,0 +1,40 @@
+.contentForm {
+   margin-left: 30px;
+   box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.btnLogin {
+   background-color: orange !important;
+   border-radius: 40px !important;
+   width: 60%;
+   height: 34px;
+   margin-left: 20%;
+   border-color: #fff !important;
+   color: #fff !important;
+
+   &:hover {
+      background-color: $btnHover !important;
+      color: #000 !important;
+   }
+}
+
+.logoImg {
+   border: none;
+   width: 30%;
+   margin-left: 35%;
+}
+
+.formLogin {
+   width: 80%;
+   margin-left: 10%;
+   color: $letterColor;
+}
+
+.acountForm {
+   color: $letterColor;
+}
+
+.acountData {
+   color: $letterColor;
+
+}

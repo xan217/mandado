@@ -1,0 +1,37 @@
+<div className="row">
+   <div className="col">
+      <div>
+         <img alt="logo" className="logoImg" src="./assets/img/logo.png" thumbnail />
+      </div>
+      <div className="card contentForm">
+         <div className=" acountForm text-center mt-2">
+            <h1>Ingresa a tu cuenta</h1>
+            <p>Administra y controla tus domiciliarios</p>
+         </div>
+         <form noValidate onSubmit={this.handleSubmit} className="needs-validation" className="formLogin">
+            <div controlId="formBasicEmail" className="form-group">
+               <label for="inputEmail">Email</label>
+               <input placeholder="Email" value={this.state.email} name="email" onChange={this.changeHandler}
+                  type="email" label="email" required className="form-control" />
+            </div>
+            <div controlId="formBasicPassword" className="form-group">
+               <label for="inputPassword">Password</label>
+               <input placeholder="Password" value={this.state.password} name="password" onChange={this.changeHandler}
+                  type="password" label="password" required className="form-control" />
+            </div>
+            <button type="submit" className="btn btnLogin" size="lg" block>
+               Ingresar
+            </button>
+         </form>
+         <div className="acountData text-center mt-3">
+            <p>¿Olvidaste tu contraseña? </p>
+         </div>
+         <div className="acountData text-center">
+            <p>¿No tienes una cuenta aún? </p>
+         </div>
+      </div>
+   </div>
+   <div className="col">
+      <ImgForm />
+   </div>
+</div>
